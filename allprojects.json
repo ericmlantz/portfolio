@@ -1,0 +1,16 @@
+[
+{
+  "name": "Dinr",
+  "Description": "This is a tinder-styled restaurant finding app.",
+  "Image": "https://i.imgur.com/8N6Z99R.png",
+  "Github Repo": "https://github.com/ericmlantz/dinr",
+  "Deployed Link": "https://rhubarb-cupcake-82292.herokuapp.com/"
+},
+{
+  "name": "Set - The Card Game",
+  "Description": "The SET Card Game - A one player, find all you can version of the card game, SET.",
+  "Image": "set",
+  "Github Repo": "set",
+  "Deployed Link": "set"
+}
+]

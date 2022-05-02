@@ -1,19 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import MenuBar from '../components/MenuBar'
 
 const Home = () => {
+  let navigate = useNavigate()
+
   return (
     <div>
-      <header className='menu-bar'>
-        <p className='mb-item'><b>Eric Lantz</b></p>
-        <p className='mb-item'>Edit</p>
-        <p className='mb-item'>View</p>
-      </header>
+      <MenuBar />
       <main className='wrapper'>
-        <div>
-
-        </div>
+        
       </main>
-      </div>
+    </div>
   )
 }
 

@@ -1,16 +1,12 @@
-import { Link, useNavigate } from 'react-router-dom'
-import {useState} from 'react'
-import Modal from './Modal'
-
 const Nav = (props) => {
 
   return (
-        <div id="dock-container">
+    <div id="dock-container">
       <div id="dock">
         <ul>
           <li>
             <span>Eric Lantz</span>
-        <a href="/"><img src='https://i.imgur.com/5ynrCwa.png'/></a>
+        <a href="/"><img src='https://i.imgur.com/5ynrCwa.png' alt='img'/></a>
       </li>
       <li>
         <span>Projects</span>
@@ -22,7 +18,7 @@ const Nav = (props) => {
       </li>
       <li>
          <span>Resume</span>
-         <a href="/resume"><img src="https://i.imgur.com/juWTVsx.png"/></a>
+         <a href="/resume"><img src="https://i.imgur.com/W0fo57K.png"/></a>
       </li>
    </ul>
  </div>
