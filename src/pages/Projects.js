@@ -1,7 +1,6 @@
 import Modal from '../components/Modal'
-import {useState} from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import MenuBar from '../components/MenuBar'
 
 const Projects = () => {
   let navigate = useNavigate()
@@ -38,16 +37,13 @@ const Projects = () => {
     ]
 
   return (
-    <div>
-      <MenuBar/>
-    <div className='projects-container' onClick={() => navigate('/')}>
+    <div className='projects-area' onClick={() => navigate('/')}>
       <div className='modal-wrapper'>
       {allprojects.map((project) => (
       <Modal key={project.id} name={project.name} description={project.description} github_repo={project.github_repo} image={project.image} deployed_link={project.deployed_link} show={show} setShow={setShow}/>
       ))}
       </div>
     </div>
-  </div>
   )
 }
 

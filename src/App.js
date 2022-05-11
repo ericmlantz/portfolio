@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Resume from './pages/Resume'
+import MenuBar from './components/MenuBar'
 
 //Extras Import
 import { Routes, Route } from 'react-router-dom';
@@ -16,8 +17,8 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <main>
+      <MenuBar />
+      <main className='setup'>
       <Routes>
           <Route
             path="/"
@@ -37,6 +38,7 @@ function App() {
           />
         </Routes>
       </main>
+      <Nav />
     </div>
   );
 }
