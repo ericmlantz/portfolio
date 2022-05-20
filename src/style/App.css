@@ -6,7 +6,7 @@ padding: 0;
 .App {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: .05fr 1fr .15fr;
+  grid-template-rows: .05fr 1fr .10fr;
   grid-template-areas:
   'a'
   'b'
@@ -15,8 +15,8 @@ padding: 0;
 }
 #dock-container {
     grid-area: c;
-    width: 45%;
-    height: auto;
+    width: 40%;
+    height: 100px;
     background: rgba(73, 73, 73, 0.25);
     border-radius: 10px;
     border: 1px solid rgba(105, 105, 105, 0.518);
@@ -25,10 +25,12 @@ padding: 0;
     text-align: center;
     margin-bottom: .5%;
     margin-top: .5%;
+    min-width: 500px;
+    max-width: 500px;
+    padding: 10px;
 }
 
 #dock {
-  height: auto;
   width: 100%;
   font-family: Helvetica;
   font-size: 18px;
@@ -37,12 +39,11 @@ padding: 0;
 }
 
 ul {
-  padding: auto;
-  margin: 2px 0px;
   padding-inline-start: 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  margin: 0px 0px;
 }
 #avatar {
   grid-area: avatar;
@@ -60,19 +61,20 @@ ul {
   grid-column: span 1;
   list-style-type: none;
   text-align: center;
-  margin: auto 0;
+  margin: 0 auto;
+  
 }
 
 #dock-container li img {
   width: 50%;
   height: auto;
   -webkit-transition: all 0.3s;
-  -webkit-transform-origin: 70% 100%;
+  -webkit-transform-origin: 50% 80%;
 }
 
 #dock-container li:hover img { 
   -webkit-transform: scale(2);
-  margin: 0 2em;
+  margin: -3em 0 0 0;
 }
 #dock-container li:hover + li img,
 #dock-container li.prev img {
@@ -92,17 +94,10 @@ ul {
   color: #fff;
 } */
 
-#dock-container span {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #dock-container li span {
   display: none;
   position: relative;
-  bottom: 140px;
-  left: 0;
+  bottom: 7em;
   width: 100%;
   background-color: rgba(0,0,0,0.75);
   padding: 4px 0;
@@ -114,12 +109,12 @@ ul {
   color: #fff;
 }
 
-#dock-container #resume li:hover span {
+/* #dock-container #resume li:hover span {
   position: relative;
   display: block;
   color: #fff;
   height:108px;
-}
+} */
 /* Menu Bar */
 
 .whole-menu-bar {
@@ -169,8 +164,9 @@ ul {
 }
 /* PROJECTS PAGE */
   
-.projects-area {
-    position: absolute;
+.projects-setup {
+    position: fixed;
+    margin: 0 auto;
     top: 0;
     left: 0;
     right: 0;
@@ -185,19 +181,24 @@ ul {
   justify-content: center;
   align-items: top;
   margin: 20px 10px;
+  height: 65%;
 }
-.modal {
-  display: flex;
+.mymodal {
   justify-content: center;
   align-items: center;
   position: initial;
   margin: 30px;
+  width: 30%;
+  height: 500px;
+  min-width: 300px;
 }
 
 .modal-content {
-  width: 400px;
-  height: auto;
-  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  display: contents;
+  overflow: scroll;
+  display: flex;
   color: black;
   align-items: center;
   padding: 20px;
@@ -212,7 +213,7 @@ ul {
   margin: 0;
   padding: 15px;
   width: 100%;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   font-family: "Jost", sans-serif;
 }
@@ -224,20 +225,20 @@ ul {
 }
 
 .modal-image {
+  border: black 2px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:300px;
-  height: 200px;
+  width:200px;
+  height: 100px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
 }
-
 /* Resume Page */ 
 .resume-windows {
   display: grid;
-  grid-template-columns: 1fr .3fr;
+  grid-template-columns: 1fr .5fr;
   grid-template-rows: 1fr;
-  align-items: center;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -324,6 +325,7 @@ font-weight: bold;
 
 /* Contact Form Page */
 .wrapper {
+  /* min-width:500px; */
   margin: 5% auto;
   display: grid;
   grid-template-columns: .4fr .8fr;
@@ -333,20 +335,22 @@ font-weight: bold;
   align-items: center;
   background: rgb(252, 252, 252);
   border-radius: 8px;
+  font-size: 16px;
 }
 .aboutme-img {
   height: 80%;
   width: 80%;
-  border-radius: 100px;
+  border-radius: 1000px;
   border: 5px solid black;
   margin: 20%;
-  
 }
+
 .sec2 {
   width:100%;
-  margin: 0 auto;
+  margin: 0 10%;
   text-align: left;
-  padding: 20px;
+  padding: auto;
+  font-size: 100%;
 }
 .download-content-home {
   grid-column: span 2;
@@ -370,4 +374,100 @@ font-weight: bold;
 }
 .about-role {
   font-size: 1em;
+}
+
+/* TABS */
+.whole-tab-page {
+width: 100vw;
+}
+.tab-wrapper {
+  width: 700px;
+  margin: 4% auto;
+}
+.tab-container {
+  background-color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: .6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'sec1''sec2';
+  justify-items: center;
+  align-items: center;
+  height: 50%;
+  overflow: scroll;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.tab-whole {
+  width: 100%;
+  background-color: #ebebeb;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sec1 {
+  justify-content: right;
+  background-color: white;
+}
+.myimg{
+  justify-content: right;
+  width: 100%;
+  border: black 4px solid;
+  margin: 0 auto;
+  border-radius:100%;
+}
+
+.nav {
+  justify-content: center;
+  padding:0 0 5px 0;
+}
+
+.modal-description {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  overflow: scroll;
+}
+
+.modal-links {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  overflow: scroll;
+}
+
+.skills-container {
+  background-color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.align-left {
+  text-align: left;
+}
+
+.overview-text {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: grey !important;
+  color: rgb(45, 45, 45) !important;
+  border: 1px rgb(38, 38, 38) solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-pills .nav-link {
+  color: rgb(45, 45, 45) !important;
+  border: 1px rgb(43, 43, 43) solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.align-right {
+  text-align: center;
+}
+
+.biggertext{
+  font-size: 30px;
 }

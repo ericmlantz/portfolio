@@ -1,3 +1,4 @@
+
 const Nav = (props) => {
 
   return (
@@ -5,7 +6,7 @@ const Nav = (props) => {
       <div id="dock">
         <ul>
           <li id='avatar'>
-            <span>Eric Lantz</span>
+        <span>Eric Lantz</span>
         <a href="/"><img src='https://i.imgur.com/5ynrCwa.png' alt='img'/></a>
       </li>
       <li id='projects'>
