@@ -1,13 +1,10 @@
-import React from 'react'
-
 const MenuBar = () => {
+  
   return (
     <div className='whole-menu-bar'>
     <header className='menu-bar'>
       <section className='menu-bar'>
         <a className='mb-item' href='/'><b>Eric Lantz</b></a>
-        <p className='mb-item'>Edit</p>
-        <p className='mb-item'>View</p>
       </section>
       <section className='menu-bar socials'>
         <a target="_blank" href='mailto:ericmlantz@gmail.com'>
