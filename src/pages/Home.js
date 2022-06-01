@@ -18,10 +18,10 @@ const Home = () => {
         <div className='tab-whole'>
 <Tab.Container id="left-tabs-example" defaultActiveKey="overview">
       <Nav variant="pills" className="flex-row">
-        <Nav.Item>
+        <Nav.Item className='tab-outline'>
           <Nav.Link eventKey="overview">Overview</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className='tab-outline2'>
           <Nav.Link eventKey="skills">Skills</Nav.Link>
         </Nav.Item>
       </Nav>

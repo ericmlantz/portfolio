@@ -1,3 +1,5 @@
+import Eric_Lantz_Resume from '../'
+
 const resume = () => {
   return (
       <div className='resume-windows'>
@@ -8,7 +10,7 @@ const resume = () => {
           <div className='circle green'></div>
         </div>
         <div className='overflow-auto'>
-          <img className='resume-png' src='https://i.imgur.com/3EYXmS3.png' alt="Eric Lantz's Resume"/>
+        <iframe className='iframe-resume' src="https://drive.google.com/file/d/1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl/preview?usp=embed_googleplus"></iframe>
         </div>
         </div>
       <div className='download-content'>
@@ -19,7 +21,7 @@ const resume = () => {
         </div>
       <div className='download-png'>
           <p className='download-button-text'>Click to Download Resume!</p>
-          <a class="btn-primary btn download-resume" href="https://drive.google.com/uc?id=15x1toEniVZoa54E5qQpHw0pgqG6_uEr8&export=download" role="button">Download</a>
+          <a className="btn-primary btn download-resume" href="https://drive.google.com/uc?id=15x1toEniVZoa54E5qQpHw0pgqG6_uEr8&export=download" role="button">Download</a>
       </div>
     </div>
   </div>
