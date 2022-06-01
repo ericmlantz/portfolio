@@ -14,7 +14,7 @@ const Projects = () => {
       "description": "This is a tinder-styled restaurant finding app.",
       "image": "https://i.imgur.com/NKnXLAy.png",
       "github_repo": "https://github.com/ericmlantz/dinr",
-      "deployed_link": "https://rhubarb-cupcake-82292.herokuapp.com/",
+      "deployed_link": "https://i.imgur.com/qCTSviW.png",
       "className": "dinr-class"
     },
     {
