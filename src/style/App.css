@@ -1,6 +1,12 @@
-* {
-margin: 0;
-padding: 0;
+html,body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url(https://512pixels.net/downloads/macos-wallpapers/10-6-Server.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .App {
@@ -15,6 +21,7 @@ padding: 0;
 }
 #dock-container {
     grid-area: c;
+    display: flex;
     width: 40%;
     height: 100px;
     background: rgba(73, 73, 73, 0.25);
@@ -30,7 +37,10 @@ padding: 0;
     padding: 10px;
 }
 
-#dock {
+#dock-container #dock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-family: Helvetica;
   font-size: 18px;
@@ -38,7 +48,7 @@ padding: 0;
   text-align: center;
 }
 
-ul {
+#dock-container #dock ul {
   padding-inline-start: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,27 +67,28 @@ ul {
 #resume {
   grid-area: resume;
 }
-#dock-container li {
+#dock-container #dock ul li {
   grid-column: span 1;
   list-style-type: none;
   text-align: center;
   margin: 0 auto;
-  
+  /* display: flex;
+  align-items: center; */
 }
 
-#dock-container li img {
+#dock-container #dock ul li img {
   width: 50%;
   height: auto;
   -webkit-transition: all 0.3s;
   -webkit-transform-origin: 50% 80%;
 }
 
-#dock-container li:hover img { 
+#dock-container #dock li:hover img { 
   -webkit-transform: scale(2);
   margin: -3em 0 0 0;
 }
-#dock-container li:hover + li img,
-#dock-container li.prev img {
+#dock-container #dock ul li:hover + li img,
+#dock-container #dock ul li.prev img {
   -webkit-transform: scale(1.5);
   margin: 0 1.5em;
 }
@@ -94,7 +105,7 @@ ul {
   color: #fff;
 } */
 
-#dock-container li span {
+#dock-container #dock ul li span {
   display: none;
   position: relative;
   bottom: 7em;
@@ -103,7 +114,7 @@ ul {
   padding: 4px 0;
   border-radius: 12px;
 }
-#dock-container li:hover span {
+#dock-container #dock ul li:hover span {
   position: relative;
   display: block;
   color: #fff;
@@ -492,4 +503,10 @@ width: 100vw;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.download-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

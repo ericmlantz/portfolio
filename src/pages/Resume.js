@@ -13,6 +13,7 @@ const resume = () => {
         <iframe className='iframe-resume' src="https://drive.google.com/file/d/1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl/preview?usp=embed_googleplus"></iframe>
         </div>
         </div>
+        <div className='download-wrapper'>
       <div className='download-content'>
         <div className='window-buttons'>
           <div className='circle red'></div>
@@ -23,6 +24,7 @@ const resume = () => {
           <p className='download-button-text'>Click to Download Resume!</p>
           <a className="btn-primary btn download-resume" href='https://drive.google.com/uc?id=1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl&export=download' role="button">Download</a>
       </div>
+    </div>
     </div>
   </div>
   )
