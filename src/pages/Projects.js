@@ -11,10 +11,10 @@ const Projects = () => {
     {
       "id": 1,
       "name": "Dinr",
-      "description": "This is a tinder-styled restaurant finding app.",
-      "image": "https://i.imgur.com/NKnXLAy.png",
-      "github_repo": "https://github.com/ericmlantz/dinr",
-      "deployed_link": "https://i.imgur.com/qCTSviW.png",
+      "description": "This is a Tinder-styled restaurant finding app.",
+      "image": "https://i.imgur.com/OrSXW0u.png",
+      "github_repo": "https://github.com/ericmlantz/frontend/tree/deployment",
+      "deployed_link": "https://deployment.d1ha25xg2gtgyh.amplifyapp.com/",
       "className": "dinr-class"
     },
     {
