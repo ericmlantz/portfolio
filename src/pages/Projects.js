@@ -13,8 +13,8 @@ const Projects = () => {
       "name": "Dinr",
       "description": "This is a tinder-styled restaurant finding app.",
       "image": "https://i.imgur.com/NKnXLAy.png",
-      "github_repo": "https://github.com/ericmlantz/dinr",
-      "deployed_link": "https://i.imgur.com/qCTSviW.png",
+      "github_repo": "https://github.com/ericmlantz/frontend/tree/deployment",
+      "deployed_link": "https://deployment.d1ha25xg2gtgyh.amplifyapp.com/",
       "className": "dinr-class"
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
     {
       "id": 3,
       "name": "Out and About 5",
-      "description": "A scavenger hunt dedicated to a person’s local area. Receive a list of 5 different locations from a variety of categories including restaurants, local parks, etc and get points for going to these locations!",
+      "description": "A scavenger hunt dedicated to a person's local area. Receive a list of 5 different locations from a variety of categories including restaurants, local parks, etc and get points for going to these locations!",
       "image": "https://i.imgur.com/hftMcPf.jpg",
       "github_repo": "https://github.com/ericmlantz/out-n-about-5-front-end",
       "deployed_link": "https://out-n-about-5-front-end.herokuapp.com/",

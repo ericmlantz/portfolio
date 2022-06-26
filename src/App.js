@@ -2,7 +2,8 @@
 import './style/App.css'
 
 //Component Imports
-import Nav from './components/Nav'
+// import Nav from './components/Nav'
+import MyDock from "./components/MyDock";
 
 //Page Components Imports
 import Home from './pages/Home'
@@ -39,7 +40,7 @@ function App() {
           />
         </Routes>
       </main>
-      <Nav />
+      <MyDock />
     </div>
   );
 }
