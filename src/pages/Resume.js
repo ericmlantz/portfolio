@@ -23,7 +23,7 @@ const resume = () => {
         </div>
       <div className='download-png'>
           <p className='download-button-text'>Click to Download Resume!</p>
-          <a className="btn-primary btn download-resume" href='https://drive.google.com/uc?id=1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl&export=download' role="button">Download</a>
+          <a className="btn-primary btn download-resume" href='https://drive.google.com/uc?id=130_WhRoDZPiPWsLwOlQ8LSlencaKPqb2&export=download' role="button">Download</a>
       </div>
     </div>
     </div>
