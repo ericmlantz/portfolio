@@ -10,7 +10,8 @@ const resume = () => {
           <div className='circle green'></div>
         </div>
         <div className='overflow-auto'>
-        <iframe className='iframe-resume' src="https://drive.google.com/file/d/1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl/preview?usp=embed_googleplus"></iframe>
+        <iframe className='iframe-resume' src="https://drive.google.com/file/d/1jpU99NFciq-jhK4cyhPxNz5GTVPayx7G/preview?usp=embed_googleplus"></iframe>
+        {/* https://drive.google.com/file/d/1doUvvB-4S7tVMyYJZOvumgUBv5wbPYtl/preview?usp=embed_googleplus" */}
         </div>
         </div>
         <div className='download-wrapper'>
